@@ -1,0 +1,13 @@
+local s1 = "https://raw.githubusercontent.com/SadoXTeam/Hydra/refs/heads/main/dtvlb1"
+local s2 = "https://raw.githubusercontent.com/SadoXTeam/Hydra/refs/heads/main/dtvlb2"
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet(s1))()
+end)
+
+if not success then
+    print("Script lỗi, đang fix...")
+    loadstring(game:HttpGet(s2))()
+else
+    print("Script đã fix thành công!")
+end
